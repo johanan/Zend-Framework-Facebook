@@ -34,10 +34,5 @@ class Josh_Facebook
         $callback = array ( self::getFB(), $name ) ;
         return call_user_func_array ( $callback , $args ) ;
     }
-	
-	public static function viewFB()
-	{
-		return self::getFB();
-	}
 }
 ?>
