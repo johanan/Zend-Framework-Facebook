@@ -1,8 +1,11 @@
 <?php
+/*
+ * You just need to require the facebook file from Facebook's SDK
+ */
+require('.\library\Facebook\facebook.php');
 
-class Josh_Facebook
+class Non_Zend_Facebook 
 {
-	
 	private static $fb;
 	
 	private static function getFB()
@@ -12,14 +15,9 @@ class Josh_Facebook
 			return self::$fb;
 		}
 		
-		$bootstrap = Zend_Controller_Front::getInstance()->getParam('bootstrap');
-		
-		$options = $bootstrap->getOptions();
-		
-		
 		$fb = New Facebook_Facebook(array(
-				'appId' => $options['facebook']['appid'],
-				'secret' => $options['facebook']['appsecret'],
+				'appId' => 'APP_ID',
+				'secret' => 'APP_SECRET',
 				));
 		
 		self::$fb = $fb;

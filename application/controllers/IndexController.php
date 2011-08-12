@@ -10,13 +10,7 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
-        $bootstrap = $this->getInvokeArg('bootstrap'); 
-		
-		
-        $this->options = $bootstrap->getOptions();
-		
-		$this->view->options = $this->options['facebook'];
+       
     }
 
 }

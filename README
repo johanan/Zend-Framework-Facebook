@@ -1,6 +1,6 @@
 This is not an entire Zend Framework install. This is only the changes that have to happen to get this working. 
 
-1. First thing to do is to download the Facebook SDK. I did not include it as it can and will change. You will unzip it and save it under the library folder as facebook. I have this folder here. I also have a stub for the facebook class as we have to rename it to work with the autoloader.
+1. First thing to do is to download the Facebook SDK. This will change so always check for the latest version. You will unzip it and save it under the library folder as facebook. I have this folder here. I also have a stub for the facebook class as we have to rename it to work with the autoloader.
 
 2. Now we will add the Josh folder under library with the facebook.php file. This is the class we will be using.
 
